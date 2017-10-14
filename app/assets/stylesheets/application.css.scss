@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "css/**/*";
+
+
+ body {
+   margin: 0px;
+   padding: 0px;
+   font-family: century gothic, normal;
+ }
+
+ #background {
+   height: 100vh;
+   width: 46vw;
+   background-color: #eee2d4;
+   position: absolute;
+   right: 0;
+ }
+
+ #main_page {
+   height: 100vh;
+ }
+
+ /* background color =
+
+ /* header */
+
+ #branding {
+   padding-top: 35px;
+ }
+
+ #tagline {
+   padding: 5px;
+ }
+
+ #navigation {
+   text-align: right;
+   padding: 15px 11px 15px 15px;
+   position: absolute;
+   right: 0;
+ }
+
+ #navigation a {
+   padding: 20px;
+   font-size: 14px;
+   color: #000;
+ }
+
+ #product_links {
+   padding: 100px 15px;
+
+ }
+
+ /* main_section8 */
+
+ #product_links li{
+   list-style: none;
+   animation-name: textIn;
+   animation-duration: 3s;
+ }
+
+ #product_links a {
+   color: #000;
+ }
+
+
+ @keyframes textIn {
+   from {
+     opacity: 0;
+     transform: translate3d(0,2000px,0);
+   }
+   to {
+     opacity: 1;
+     transform: none;
+   }
+
+ }
+
+ .dropdown_edibles {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+ }
+
+ .dropdown_edibles_content {
+   display: none;
+   text-align: right;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+
+ .dropdown_edibles_content a {
+   display: block;
+ }
+
+ .dropdown_edibles:hover .dropdown_edibles_content {
+   display: block;
+ }
+
+ .dropdown_non_edibles {
+   position: relative;
+   cursor: pointer;
+ }
+
+ .dropdown_non_edibles_content {
+   display: none;
+   text-align: right;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+
+ .dropdown_non_edibles_content a {
+   display: block;
+ }
+
+ .dropdown_non_edibles:hover .dropdown_non_edibles_content {
+   display: block;
+ }
+
+
+#image_container {
+   width: 41vw;
+   height: 77vh;
+   margin: 0 auto;
+   overflow: hidden;
+ }
+
+.img {
+  width: 41vw;
+  height: 77vh;
+ }
+
+
+ #product_description {
+   padding: 300px 0px 10px 30px;
+ }
+
+
+ /* footer */
+
+ .footer {
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   padding: 30px;
+ }
+
+
+ #social_media {
+  padding-left: 55px;
+ }
+
+ #social_media a {
+   padding-right: 50px;
+   display: inline-block;
+   color: #000;
+ }
+
+ #copyright {
+   text-align: right;
+ }

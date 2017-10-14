@@ -1,0 +1,2 @@
+module NonEdiblesHelper
+end

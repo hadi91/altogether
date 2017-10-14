@@ -6,9 +6,85 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
 
   <body>
     <%= yield %>
+    <div class="container" id=main_page>
+      <div class="row" id="branding">
+        <div class="col-xs-6">
+          <div id="logo">
+            <%= image_tag ("logo.png") %>
+          </div>
+          <div id="tagline">
+            <%= image_tag ("tagline.png") %>
+          </div>
+        </div>
+
+        <div class="col-xs-6" id="navigation">
+          <a href="#">Home</a>
+          <a href="#">Projects</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+
+
+            <div class="row">
+              <div class="col-xs-3" id="product_links">
+                <h4>Favours</h4>
+                <ul>
+                  <div class="dropdown_edibles">
+                    <li id="edibles">Edibles</li>
+                    <div class="dropdown_edibles_content">
+                      <%= link_to "Tea", edibles_tea_path%>
+                      <%= link_to "Jam", edibles_jam_path%>
+                      <%= link_to "Honey", edibles_honey_path%>
+                      <%= link_to "Bundt Cakes", edibles_cakes_path%>
+                      <%= link_to "Coffee", edibles_coffee_path%>
+                      <%= link_to "Macarons", edibles_macarons_path%>
+                      <%= link_to "Cookies", edibles_cookies_path%>
+                    </div>
+                  </div>
+                  <div class="dropdown_non_edibles">
+                    <li id="non-edibles">Non-Edibles</li>
+                    <div class="dropdown_non_edibles_content">
+                      <%= link_to "Fans", non_edibles_fans_path%>
+                      <%= link_to "Shades", non_edibles_shades_path%>
+                      <%= link_to "Candle", non_edibles_candle_path%>
+                    </div>
+                  </div>
+                </ul>
+                <h4>Invitations</h4>
+                <ul>
+                  <li><a href="#" id="cards">Cards</a></li>
+                  <li><a href="#" id="envelopes">Envelopes</a></li>
+                </ul>
+              </div>
+
+              <div class="col-xs-4" id="image_container">
+                <img src="/assets/tea.png" alt="edibles" class="img"/>
+              </div>
+
+              <div class="col-xs-3" id="description">
+                <p id="product_description">An aromatic beverage commonly prepared by everyone. Let your guests enjoy a cup of cured leaves to unwind and  relax with either our House or Premium selection for you to choose from.</p>
+              </div>
+            </div>
+
+
+            <div class="row footer">
+              <div class="col-xs-6" id="social_media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+              </div>
+              <div class="col-xs-6">
+                <div>
+                  <p id="copyright">&#169 Copyright 2017 Altogether</p>
+                </div>
+              </div>
+            </div>
+
+  </div>
   </body>
 </html>
