@@ -1,2 +1,13 @@
-<h1>Edibles#coffee</h1>
-<p>Find me in app/views/edibles/coffee.html.erb</p>
+<% content_for :background do%>
+<div id="background_coffee"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/coffee.png" alt="edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Coffee can bring with it some surprising perks. Gift your guests ground coffee packed in test tube jars.</p>
+</div>
+<% end %>

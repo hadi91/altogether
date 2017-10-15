@@ -1,2 +1,13 @@
-<h1>Edibles#honey</h1>
-<p>Find me in app/views/edibles/honey.html.erb</p>
+<% content_for :background do%>
+<div id="background_honey"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/honey.png" alt="edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Relatively as sweet as granulated sugar, honey has an attractive and a distinctive flavor when used as a sweetener. What better gift to give your guests that goes along to your sweet and memorable event.</p>
+</div>
+<% end %>

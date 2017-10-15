@@ -1,2 +1,13 @@
-<h1>Edibles#jam</h1>
-<p>Find me in app/views/edibles/jam.html.erb</p>
+<% content_for :background do%>
+<div id="background_jam"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/jam.png" alt="edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Containing both the juice and flesh of a fruit, jam spreads are a delicacy that can be enjoyed in a variety of ways.</p>
+</div>
+<% end %>

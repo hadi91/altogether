@@ -1,2 +1,13 @@
-<h1>NonEdibles#shades</h1>
-<p>Find me in app/views/non_edibles/shades.html.erb</p>
+<% content_for :background do%>
+<div id="background_shades"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/shades.png" alt="non_edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Love is so bright that your guests have to put on the shades. Bring on the smiles and good times with an eccentric gift that will make your event truly memorable.</p>
+</div>
+<% end %>

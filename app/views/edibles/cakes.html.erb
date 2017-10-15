@@ -1,2 +1,13 @@
-<h1>Edibles#cakes</h1>
-<p>Find me in app/views/edibles/cakes.html.erb</p>
+<% content_for :background do%>
+<div id="background_cakes"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/cakes.png" alt="edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Baked with distinctive ring shape inspired by a traditional European cake. Delicious to consume at room temperature, the bundt cakes offer your guests the perfect compliment toyour joyous event.</p>
+</div>
+<% end %>

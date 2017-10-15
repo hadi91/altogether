@@ -1,2 +1,13 @@
-<h1>Edibles#cookies</h1>
-<p>Find me in app/views/edibles/cookies.html.erb</p>
+<% content_for :background do%>
+<div id="background_cookies"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/cookies.png" alt="edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">A descent from cakes and other sweetened breads, the cookie in almost all its forms remains a favourite comfort dessert.</p>
+</div>
+<% end %>

@@ -1,2 +1,13 @@
-<h1>Invitations#cards</h1>
-<p>Find me in app/views/invitations/cards.html.erb</p>
+<% content_for :background do%>
+<div id="background_cards"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/cards.png" alt="invitations"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Announce your special day to your guests with modern, unique wedding invitations and elegant stationery.</p>
+</div>
+<% end %>

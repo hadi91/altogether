@@ -1,7 +1,13 @@
-<head>
-  <title>Altogether</title>
-</head>
-
-<body>
+  <% content_for :background do%>
   <div id="background"></div>
-</body>
+  <% end %>
+
+  <% content_for :image do %>
+  <div class="col-xs-4" id="image_container">
+    <img src="/assets/tea.png" alt="edibles" class="img"/>
+  </div>
+
+  <div class="col-xs-3" id="description">
+    <p id="product_description">An aromatic beverage commonly prepared by everyone. Let your guests enjoy a cup of cured leaves to unwind and  relax with either our House or Premium selection for you to choose from.</p>
+  </div>
+  <% end %>

@@ -1,2 +1,13 @@
-<h1>Edibles#macarons</h1>
-<p>Find me in app/views/edibles/macarons.html.erb</p>
+<% content_for :background do%>
+<div id="background_macarons"></div>
+<% end %>
+
+<% content_for :image do %>
+<div class="col-xs-4" id="image_container">
+  <img src="/assets/macarons.png" alt="edibles"/>
+</div>
+
+<div class="col-xs-3" id="description">
+  <p id="product_description">Sharing a cake is a magical moment of festivity and emotion. Guests will enjoy this beautiful treat that will make your event a more memorable one.</p>
+</div>
+<% end %>
