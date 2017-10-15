@@ -8,7 +8,33 @@
 }
 
 #info {
-  padding-top: 40px;
+  padding-top: 20px;
   margin: auto;
   width: 50px;
+}
+
+#contact {
+  float: right;
+}
+
+.contact_form_text_area {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid black;
+  width: 200px;
+}
+
+.contact_title {
+  padding-top: 15px;
+  text-transform: capitalize;
+}
+
+.message_button {
+  color: #ffffff;
+  background: #131414;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  margin-top: 10px;
 }

@@ -12,18 +12,19 @@
 //
 //= require rails-ujs
 //= require jquery
+//= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require_tree .
 
-
-$(document).ready(function(){
+var ready = function(){
   $('#edibles').hover(function(){
     $('.img').attr('src','/assets/tea.png');
   }, function(){
     $('.img').attr('src','/assets/tea.png');
   });
 
-  $('#non-edibles').hover(function(){
+  $('.dropdown_non_edibles').hover(function(){
     $('.img').attr('src','/assets/fans.png');
     $('#background').css('background-color','#ebcfdf');
   }, function(){
@@ -47,5 +48,9 @@ $(document).ready(function(){
     $('.img').attr('src','/assets/tea.png');
     $('#background').css('background-color','#eee2d4');
   });
+}
 
-});
+
+$(document).ready(ready);
+
+$(document).on('turbolinks:load', ready);
