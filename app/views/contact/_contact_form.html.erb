@@ -1,5 +1,5 @@
 <%= form_for @contact, url: contact_index_path, remote: true do |f| %>
-  <div class="col-xs-5"%>
+  <div class="col-xs-5" id="contact_form"%>
     <%= f.label "Your Name", class: "contact_title" %> <br>
     <%= f.text_field :name, required: true, class: "contact_form_text_area" %> <br>
 

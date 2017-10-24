@@ -1,0 +1,41 @@
+<div class="row" id="mobile_layout">
+  <div class="col-xs-12">
+    <div class="dropdown">
+      <h5><button onclick="edibles_click()" class="dropbtn">Edibles</button></h5>
+      <div id="edibles_dropdown" class="dropdown-content">
+        <%= link_to "Tea", edibles_tea_path%>
+        <%= link_to "Jam", edibles_jam_path%>
+        <%= link_to "Honey", edibles_honey_path%>
+        <%= link_to "Bundt Cakes", edibles_cakes_path%>
+        <%= link_to "Coffee", edibles_coffee_path%>
+        <%= link_to "Macarons", edibles_macarons_path%>
+        <%= link_to "Cookies", edibles_cookies_path%>
+      </div>
+    </div>
+    <hr>
+    <%= image_tag 'fans.png', class: "img", id: "mobile_layout"%>
+    <div class="dropdown">
+      <h5><button onclick="non_edibles_click()" class="dropbtn">Non-Edibles</button></h5>
+      <div id="non_edibles_dropdown" class="dropdown-content">
+        <%= link_to "Fans", non_edibles_fans_path%>
+        <%= link_to "Shades", non_edibles_shades_path%>
+        <%= link_to "Candle", non_edibles_candle_path%>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>
+<div class="row" id="mobile_layout">
+  <div class="col-xs-12">
+    <%= image_tag 'cards.png', class: "img", id: "mobile_layout"%>
+    <h5><%= link_to "Cards", invitations_cards_path, id: 'cards'%></h5>
+    <hr>
+  </div>
+</div>
+<div class="row" id="mobile_layout">
+  <div class="col-xs-12">
+    <%= image_tag 'envelopes1.png', class: "img", id: "mobile_layout"%>
+    <h5><%= link_to "Envelopes", invitations_envelopes_path, id: 'envelopes'%></h5>
+    <hr>
+  </div>
+</div>

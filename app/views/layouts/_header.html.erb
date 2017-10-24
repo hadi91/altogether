@@ -1,4 +1,4 @@
-<div class="row" id="branding">
+<div class="row navbar header" id="branding">
   <div class="col-xs-6">
     <div id="logo">
       <%= image_tag ("logo.png") %>
@@ -6,12 +6,21 @@
     <div id="tagline">
       <%= image_tag ("tagline.png") %>
     </div>
+
   </div>
+  <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dropdown">
+    <span class="glyphicon glyphicon-menu-hamburger"></span>﻿
+  </button>
 
   <div class="col-xs-6" id="navigation">
-    <%= link_to "Home", pages_home_path %>
-    <%= link_to "Products", pages_products_path %>
-    <%= link_to "About", pages_about_path %>
-    <%= link_to "Contact", contact_index_path %>
+    <div class="collapse navbar-collapse" id="dropdown">
+      <ul class="active">
+        <li class="current-item"><%= link_to "Home", pages_home_path %></li>
+        <li><%= link_to "About", pages_about_path %></li>
+        <li><%= link_to "Contact", contact_index_path %></li>
+      </ul>
+    </div>
+
+
   </div>
 </div>

@@ -17,36 +17,68 @@
 //= require bootstrap
 //= require_tree .
 
+
+function edibles_click(){
+  document.getElementById("edibles_dropdown").classList.toggle("show");
+}
+
+function non_edibles_click(){
+  document.getElementById("non_edibles_dropdown").classList.toggle("show");
+}
+
+window.onclick = function(e){
+  if (!e.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i=0; i<dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')){
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+}
+
 var ready = function(){
   $('#edibles').hover(function(){
-    $('.img').attr('src','/assets/tea.png');
+    $('#image_change').fadeOut(function(){
+      $(this).attr('src','/assets/tea.png').fadeIn();
+    });
+    $('#background').css('background-color','#eee2d4');
+    $('#description_change').html('An aromatic beverage commonly prepared by everyone. Let your guests enjoy a cup of cured leaves to unwind and relax with either our House or Premium selection for you to choose from.');
   }, function(){
-    $('.img').attr('src','/assets/tea.png');
+    $('#image_change').attr('src', '/assets/tea.png');
   });
 
   $('.dropdown_non_edibles').hover(function(){
-    $('.img').attr('src','/assets/fans.png');
+    $('#image_change').fadeOut(function(){
+      $(this).attr('src','/assets/fans.png').fadeIn();
+    });
     $('#background').css('background-color','#ebcfdf');
+    $('#description_change').html('Beautiful as they are functional, fashioned out of decorative paper and wood. Make it your own by engraving your names and dates on the side to etch your occasion into your guests’ hearts. Paper fans come in a variety of colours.');
   }, function(){
-    $('.img').attr('src','/assets/tea.png');
-    $('#background').css('background-color','#eee2d4');
+    $('#image_change').attr('src', '/assets/fans.png');
   });
 
   $('#cards').hover(function(){
-    $('.img').attr('src','/assets/cards.png');
+    $('#image_change').fadeOut(function(){
+      $(this).attr('src','/assets/cards.png').fadeIn();
+    });
     $('#background').css('background-color','#b6d4dc');
-
+    $('#description_change').html('Announce your special day to your guests with modern, unique wedding invitations and elegant stationery.');
   }, function(){
-    $('.img').attr('src','/assets/tea.png');
-    $('#background').css('background-color','#eee2d4');
+    $('#image_change').attr('src', '/assets/cards.png');
   });
 
   $('#envelopes').hover(function(){
-    $('.img').attr('src','/assets/envelopes.png');
+    $('#image_change').fadeOut(function(){
+      $(this).attr('src','/assets/envelopes.png').fadeIn();
+    });
     $('#background').css('background-color','#aeb9b5');
+    $('#description_change').html('Distinct designs, attractive colours and a premium finish that will offer you everything you ever wanted for your wedding invitations.');
   }, function(){
-    $('.img').attr('src','/assets/tea.png');
-    $('#background').css('background-color','#eee2d4');
+    $('#image_change').attr('src', '/assets/envelopes.png');
   });
 }
 
