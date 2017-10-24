@@ -17,6 +17,10 @@
 //= require bootstrap
 //= require_tree .
 
+var tea = "#{asset_path('tea.png')}";
+var fans = "#{asset_path('fans.png')}";
+var cards = "#{asset_path('cards.png')}";
+var envelopes = "#{asset_path('envelopes.png')}";
 
 function edibles_click(){
   document.getElementById("edibles_dropdown").classList.toggle("show");
@@ -43,42 +47,42 @@ window.onclick = function(e){
 var ready = function(){
   $('#edibles').hover(function(){
     $('#image_change').fadeOut(function(){
-      $(this).attr('src','/assets/tea.png').fadeIn();
+      $(this).attr('src', tea).fadeIn();
     });
     $('#background').css('background-color','#eee2d4');
     $('#description_change').html('An aromatic beverage commonly prepared by everyone. Let your guests enjoy a cup of cured leaves to unwind and relax with either our House or Premium selection for you to choose from.');
   }, function(){
-    $('#image_change').attr('src', '/assets/tea.png');
+    $('#image_change').attr('src', tea);
   });
 
   $('.dropdown_non_edibles').hover(function(){
     $('#image_change').fadeOut(function(){
-      $(this).attr('src','/assets/fans.png').fadeIn();
+      $(this).attr('src', fans).fadeIn();
     });
     $('#background').css('background-color','#ebcfdf');
     $('#description_change').html('Beautiful as they are functional, fashioned out of decorative paper and wood. Make it your own by engraving your names and dates on the side to etch your occasion into your guests’ hearts. Paper fans come in a variety of colours.');
   }, function(){
-    $('#image_change').attr('src', '/assets/fans.png');
+    $('#image_change').attr('src', fans);
   });
 
   $('#cards').hover(function(){
     $('#image_change').fadeOut(function(){
-      $(this).attr('src','/assets/cards.png').fadeIn();
+      $(this).attr('src', cards).fadeIn();
     });
     $('#background').css('background-color','#b6d4dc');
     $('#description_change').html('Announce your special day to your guests with modern, unique wedding invitations and elegant stationery.');
   }, function(){
-    $('#image_change').attr('src', '/assets/cards.png');
+    $('#image_change').attr('src', cards);
   });
 
   $('#envelopes').hover(function(){
     $('#image_change').fadeOut(function(){
-      $(this).attr('src','/assets/envelopes.png').fadeIn();
+      $(this).attr('src', envelopes).fadeIn();
     });
     $('#background').css('background-color','#aeb9b5');
     $('#description_change').html('Distinct designs, attractive colours and a premium finish that will offer you everything you ever wanted for your wedding invitations.');
   }, function(){
-    $('#image_change').attr('src', '/assets/envelopes.png');
+    $('#image_change').attr('src', envelopes);
   });
 }
 
