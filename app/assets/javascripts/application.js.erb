@@ -73,12 +73,12 @@ var ready = function(){
 
   $('#envelopes').hover(function(){
     $('#image_change').fadeOut(function(){
-      $(this).attr('src', "<%= asset_path('envelopes.png') %>").fadeIn();
+      $(this).attr('src', "<%= asset_path('envelopes1.png') %>").fadeIn();
     });
     $('#background').css('background-color','#aeb9b5');
     $('#description_change').html('Distinct designs, attractive colours and a premium finish that will offer you everything you ever wanted for your wedding invitations.');
   }, function(){
-    $('#image_change').attr('src', "<%= asset_path('envelopes.png') %>");
+    $('#image_change').attr('src', "<%= asset_path('envelopes1.png') %>");
   });
 }
 
